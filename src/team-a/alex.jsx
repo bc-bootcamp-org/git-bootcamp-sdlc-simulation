@@ -37,7 +37,7 @@ const Alex = () => {
           color: '#1f2937',
           marginBottom: '0.5rem'
         }}>
-          Alex
+          Alex Johnson
         </h3>
         <p style={{
           color: '#6b7280',
