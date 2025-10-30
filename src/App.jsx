@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 
 // Team A
 import Alex from './team-a/alex';
+import Becca from './team-a/becca';
 
 // Team B
 import Beth from './team-b/beth';
@@ -19,7 +20,7 @@ import Eric from './team-e/eric';
 
 function App() {
   const teams = [
-    { name: 'Team A', members: [<Alex key="alex" />] },
+    { name: 'Team A', members: [<Alex key="alex" />, <Becca key="becca" />] },
     { name: 'Team B', members: [<Beth key="beth" />] },
     { name: 'Team C', members: [<Charlie key="charlie" />] },
     { name: 'Team D', members: [<Diana key="diana" />] },
