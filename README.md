@@ -1,123 +1,90 @@
-# Team Directory - React App
+# Git & GitHub Bootcamp – SDLC Simulation
 
-A modern React application built with Vite featuring a team directory with organized team structure.
+Welcome to the **Git & GitHub Bootcamp: SDLC Simulation** repository.  
+This project is part of a hands-on exercise that simulates a real-world Software Development Life Cycle (SDLC) using Git and GitHub.  
+Participants collaborate on feature branches, raise pull requests, and experience the end-to-end development flow.
 
-## Features
+---
 
-- 🎨 Beautiful gradient UI with responsive design
-- 👥 5 team sections (Team A, B, C, D, E)
-- 📁 Organized folder structure for easy team member management
-- 🎭 Template-based component system for quick member addition
-- ⚡ Fast development with Vite
-- 💅 Styled with CSS-in-JS (inline styles)
+## 🚀 Getting Started
 
-## Project Structure
+### Prerequisites  
+- Node.js version 14 or higher  
+- npm (or yarn)  
+- Basic understanding of Git and GitHub  
 
-```
-src/
-├── components/
-│   ├── Header.jsx      # Main header component
-│   └── Footer.jsx      # Footer component
-├── team-a/
-│   ├── template.jsx    # Template for Team A members
-│   └── alex.jsx        # Example member
-├── team-b/
-│   ├── template.jsx    # Template for Team B members
-│   └── beth.jsx        # Example member
-├── team-c/
-│   ├── template.jsx    # Template for Team C members
-│   └── charlie.jsx     # Example member
-├── team-d/
-│   ├── template.jsx    # Template for Team D members
-│   └── diana.jsx       # Example member
-├── team-e/
-│   ├── template.jsx    # Template for Team E members
-│   └── eric.jsx        # Example member
-├── App.jsx             # Main app component
-├── main.jsx            # Entry point
-└── index.css           # Global styles
-```
+### Installation & Running Locally  
+1. **Clone this repository**  
+   ```bash
+   git clone https://github.com/bc-bootcamp-org/git-bootcamp-sdlc-simulation.git
+   cd git-bootcamp-sdlc-simulation
+   ```
 
-## Getting Started
+2. **Install dependencies**  
+   ```bash
+   npm install
+   ```
 
-### Prerequisites
+3. **Start the development server**  
+   ```bash
+   npm run dev
+   ```
 
-- Node.js 14+ 
-- npm or yarn
+4. **Open your browser at:**  
+   ```
+   http://localhost:5173
+   ```
 
-### Installation
+### Available Scripts  
+- `npm run dev` – starts the dev server  
+- `npm run build` – builds the app for production  
+- `npm run preview` – previews the production build locally  
+- `npm run lint` – runs ESLint for code quality  
 
-1. Clone the repository
-```bash
-git clone https://github.com/bc-bootcamp-org/git-bootcamp-sdlc-simulation.git
-cd git-bootcamp-sdlc-simulation
-```
+---
 
-2. Install dependencies
-```bash
-npm install
-```
+## 🌐 Live Deployment Links
 
-3. Start the development server
-```bash
-npm run dev
-```
+Each branch in this repository is deployed automatically via **Netlify**.  
+You can view the live preview for each branch using the URLs below:
 
-4. Open your browser and navigate to `http://localhost:5173`
+| Branch | Live URL |
+|--------|-----------|
+| `main` | https://bootcamp.jenishtwayana.com.np |
+| `dev` | https://dev-bootcamp.jenishtwayana.com.np |
+| `team-a` | https://team-a-bootcamp.jenishtwayana.com.np |
+| `team-b` | https://team-b-bootcamp.jenishtwayana.com.np |
+| `team-c` | https://team-c-bootcamp.jenishtwayana.com.np |
+| `team-d` | https://team-d-bootcamp.jenishtwayana.com.np |
+| `team-e` | https://team-e-bootcamp.jenishtwayana.com.np |
 
-## Available Scripts
+> 📝 *Note:* The branch deployments may take a few minutes to update after a merge or commit.
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+---
 
-## Adding New Team Members
+## 🧑‍💻 Workflow / Simulation Scenario
 
-To add a new team member, follow these steps:
+This repository is used for simulating collaborative development within a bootcamp context.  
+The standard workflow includes:
 
-1. Navigate to the appropriate team folder (e.g., `src/team-a/`)
-2. Copy `template.jsx` and rename it (e.g., `john.jsx`)
-3. Update the component name and display name
-4. Import the new component in `src/App.jsx`
-5. Add it to the appropriate team's members array
+1. **Create a feature branch** (e.g., `team-a/john-addcomponent`)  
+2. **Make changes** to your team's module or files  
+3. **Commit and push** your branch to GitHub  
+4. **Open a Pull Request (PR)** for review  
+5. **Collaborate through code reviews** (approve or request changes)  
+6. **Merge the PR** into the `main` branch after approval  
+7. **View deployment** at your branch’s live URL  
 
-Example:
-```jsx
-// src/team-a/john.jsx
-import React from 'react';
+This simulation helps participants practice real-world SDLC concepts — planning, version control, collaboration, and release workflows — in a controlled learning environment.
 
-const John = () => {
-  return (
-    <div style={{
-      backgroundColor: 'white',
-      borderRadius: '0.5rem',
-      boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)',
-      padding: '1.5rem'
-    }}>
-      {/* Component content */}
-    </div>
-  );
-};
+---
 
-export default John;
-```
+## 🧭 Goal
 
-Then in `App.jsx`:
-```jsx
-import John from './team-a/john.jsx';
+The goal of this exercise is to help learners understand:
+- How teams collaborate using Git & GitHub  
+- The branching, review, and merging workflow  
+- How CI/CD connects to deployments per branch  
+- The full SDLC from feature development to release  
 
-// In the teams array:
-{ name: 'Team A', members: [<Alex key="alex" />, <John key="john" />] }
-```
-
-## Built With
-
-- [React](https://react.dev/) - UI library
-- [Vite](https://vite.dev/) - Build tool
-- CSS-in-JS - Styling approach
-
-## License
-
-This project is part of the BC Bootcamp SDLC simulation.
-
+---
