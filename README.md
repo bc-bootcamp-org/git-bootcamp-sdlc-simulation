@@ -89,7 +89,12 @@ import React from 'react';
 
 const John = () => {
   return (
-    <div style={{...}}>
+    <div style={{
+      backgroundColor: 'white',
+      borderRadius: '0.5rem',
+      boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)',
+      padding: '1.5rem'
+    }}>
       {/* Component content */}
     </div>
   );
@@ -100,7 +105,7 @@ export default John;
 
 Then in `App.jsx`:
 ```jsx
-import John from './team-a/john';
+import John from './team-a/john.jsx';
 
 // In the teams array:
 { name: 'Team A', members: [<Alex key="alex" />, <John key="john" />] }
