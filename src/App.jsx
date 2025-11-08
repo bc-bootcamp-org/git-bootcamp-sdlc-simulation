@@ -110,10 +110,10 @@ function App() {
       ]
     },
     { 
-      name: 'Team Mukesh G.', 
+      name: 'Poojan Baby', 
       members: [
         <TeamMember1D key="teamMember1D" />,
-        <TeamMember2D key="teamMember2D" />,
+        <TeamMember2D key="teamMember2  D" />,
         <TeamMember3D key="teamMember3D" />,
         <TeamMember4D key="teamMember4D" />,
         <TeamMember5D key="teamMember5D" />,
