@@ -110,7 +110,7 @@ function App() {
       ]
     },
     { 
-      name: 'Poojan Baby', 
+      name: 'Team Durian', 
       members: [
         <TeamMember1D key="teamMember1D" />,
         <TeamMember2D key="teamMember2  D" />,
