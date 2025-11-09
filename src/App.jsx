@@ -15,52 +15,52 @@ import TeamMember9A from './team-a/teamMember9';
 import TeamMember10A from './team-a/teamMember10';
 
 // Team B
-import TeamMember1B from './team-b/teamMember1';
-import TeamMember2B from './team-b/teamMember2';
-import TeamMember3B from './team-b/teamMember3';
-import TeamMember4B from './team-b/teamMember4';
-import TeamMember5B from './team-b/teamMember5';
-import TeamMember6B from './team-b/teamMember6';
-import TeamMember7B from './team-b/teamMember7';
-import TeamMember8B from './team-b/teamMember8';
-import TeamMember9B from './team-b/teamMember9';
-import TeamMember10B from './team-b/teamMember10';
+import TeamMember1B from './team-b/teamMember11';
+import TeamMember2B from './team-b/teamMember12';
+import TeamMember3B from './team-b/teamMember13';
+import TeamMember4B from './team-b/teamMember14';
+import TeamMember5B from './team-b/teamMember15';
+import TeamMember6B from './team-b/teamMember16';
+import TeamMember7B from './team-b/teamMember17';
+import TeamMember8B from './team-b/teamMember18';
+import TeamMember9B from './team-b/teamMember19';
+import TeamMember10B from './team-b/teamMember20';
 
 // Team C
-import TeamMember1C from './team-c/teamMember1';
-import TeamMember2C from './team-c/teamMember2';
-import TeamMember3C from './team-c/teamMember3';
-import TeamMember4C from './team-c/teamMember4';
-import TeamMember5C from './team-c/teamMember5';
-import TeamMember6C from './team-c/teamMember6';
-import TeamMember7C from './team-c/teamMember7';
-import TeamMember8C from './team-c/teamMember8';
-import TeamMember9C from './team-c/teamMember9';
-import TeamMember10C from './team-c/teamMember10';
+import TeamMember1C from './team-c/teamMember21';
+import TeamMember2C from './team-c/teamMember22';
+import TeamMember3C from './team-c/teamMember23';
+import TeamMember4C from './team-c/teamMember24';
+import TeamMember5C from './team-c/teamMember25';
+import TeamMember6C from './team-c/teamMember26';
+import TeamMember7C from './team-c/teamMember27';
+import TeamMember8C from './team-c/teamMember28';
+import TeamMember9C from './team-c/teamMember29';
+import TeamMember10C from './team-c/teamMember30';
 
 // Team D
-import TeamMember1D from './team-d/teamMember1';
-import TeamMember2D from './team-d/teamMember2';
-import TeamMember3D from './team-d/teamMember3';
-import TeamMember4D from './team-d/teamMember4';
-import TeamMember5D from './team-d/teamMember5';
-import TeamMember6D from './team-d/teamMember6';
-import TeamMember7D from './team-d/teamMember7';
-import TeamMember8D from './team-d/teamMember8';
-import TeamMember9D from './team-d/teamMember9';
-import TeamMember10D from './team-d/teamMember10';
+import TeamMember1D from './team-d/teamMember31';
+import TeamMember2D from './team-d/teamMember32';
+import TeamMember3D from './team-d/teamMember33';
+import TeamMember4D from './team-d/teamMember34';
+import TeamMember5D from './team-d/teamMember35';
+import TeamMember6D from './team-d/teamMember36';
+import TeamMember7D from './team-d/teamMember37';
+import TeamMember8D from './team-d/teamMember38';
+import TeamMember9D from './team-d/teamMember39';
+import TeamMember10D from './team-d/teamMember40';
 
 // Team E
-import TeamMember1E from './team-e/teamMember1';
-import TeamMember2E from './team-e/teamMember2';
-import TeamMember3E from './team-e/teamMember3';
-import TeamMember4E from './team-e/teamMember4';
-import TeamMember5E from './team-e/teamMember5';
-import TeamMember6E from './team-e/teamMember6';
-import TeamMember7E from './team-e/teamMember7';
-import TeamMember8E from './team-e/teamMember8';
-import TeamMember9E from './team-e/teamMember9';
-import TeamMember10E from './team-e/teamMember10';
+import TeamMember1E from './team-e/teamMember41';
+import TeamMember2E from './team-e/teamMember42';
+import TeamMember3E from './team-e/teamMember43';
+import TeamMember4E from './team-e/teamMember44';
+import TeamMember5E from './team-e/teamMember45';
+import TeamMember6E from './team-e/teamMember46';
+import TeamMember7E from './team-e/teamMember47';
+import TeamMember8E from './team-e/teamMember48';
+import TeamMember9E from './team-e/teamMember49';
+import TeamMember10E from './team-e/teamMember50';
 
 function App() {
   const teams = [
@@ -110,7 +110,7 @@ function App() {
       ]
     },
     { 
-      name: 'Team Mukesh G.', 
+      name: 'Team MMM', 
       members: [
         <TeamMember1D key="teamMember1D" />,
         <TeamMember2D key="teamMember2D" />,
@@ -215,7 +215,7 @@ function App() {
                 borderBottom: '4px solid #3b82f6',
                 paddingBottom: '0.5rem'
               }}>
-                {team.name}
+                {"Feature by " + team.name}
               </h2>
               <div style={{
                 display: 'grid',

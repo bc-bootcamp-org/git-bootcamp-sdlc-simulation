@@ -1,7 +1,11 @@
 import React from 'react';
 
 const TeamMember1 = () => {
+<<<<<<< HEAD:src/team-d/teamMember1.jsx
   const name = "Mukesh Ambani"; // Leave blank for now
+=======
+  const name = "Salon"; // Leave blank for now
+>>>>>>> 955470ade9d23854a0411c4306b2fe8139a8e6bf:src/team-d/teamMember31.jsx
   
   // Return null if name is blank
   if (!name.trim()) {
