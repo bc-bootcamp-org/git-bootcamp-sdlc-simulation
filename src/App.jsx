@@ -95,7 +95,7 @@ function App() {
       ]
     },
     { 
-      name: 'Team C', 
+      name: 'Team C ', 
       members: [
         <TeamMember1C key="teamMember1C" />,
         <TeamMember2C key="teamMember2C" />,
