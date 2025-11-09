@@ -80,7 +80,7 @@ function App() {
       ]
     },
     { 
-      name: 'Team B', 
+      name: 'Team Baddie', 
       members: [
         <TeamMember1B key="teamMember1B" />,
         <TeamMember2B key="teamMember2B" />,
