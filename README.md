@@ -6,6 +6,25 @@ Participants collaborate on feature branches, raise pull requests, and experienc
 
 ---
 
+## 🌐 Deployment Environments
+
+Each branch in this repository is deployed automatically via **Netlify**.  
+You can view the live preview for each branch using the URLs below:
+
+| Branch | Live URL |
+|--------|-----------|
+| `main` | https://bootcamp.jenishtwayana.com.np |
+| `dev` | https://dev-bootcamp.jenishtwayana.com.np |
+| `team-a` | https://team-a-bootcamp.jenishtwayana.com.np |
+| `team-b` | https://team-b-bootcamp.jenishtwayana.com.np |
+| `team-c` | https://team-c-bootcamp.jenishtwayana.com.np |
+| `team-d` | https://team-d-bootcamp.jenishtwayana.com.np |
+| `team-e` | https://team-e-bootcamp.jenishtwayana.com.np |
+
+> 📝 *Note:* The branch deployments may take a few minutes to update after a merge or commit.
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites  
@@ -43,39 +62,49 @@ Participants collaborate on feature branches, raise pull requests, and experienc
 
 ---
 
-## 🌐 Live Deployment Links
+## 🧑‍💻 Git & PR Workflow
 
-Each branch in this repository is deployed automatically via **Netlify**.  
-You can view the live preview for each branch using the URLs below:
+This exercise simulates real-world Git collaboration and PR management within team branches.
 
-| Branch | Live URL |
-|--------|-----------|
-| `main` | https://bootcamp.jenishtwayana.com.np |
-| `dev` | https://dev-bootcamp.jenishtwayana.com.np |
-| `team-a` | https://team-a-bootcamp.jenishtwayana.com.np |
-| `team-b` | https://team-b-bootcamp.jenishtwayana.com.np |
-| `team-c` | https://team-c-bootcamp.jenishtwayana.com.np |
-| `team-d` | https://team-d-bootcamp.jenishtwayana.com.np |
-| `team-e` | https://team-e-bootcamp.jenishtwayana.com.np |
+### 🔹 Standard Flow
 
-> 📝 *Note:* The branch deployments may take a few minutes to update after a merge or commit.
+1. Clone the repo and run `npm install` to set up the project.  
+2. Switch to your team branch (e.g., `team/X`) and create a new branch:  
+   ```bash
+   git checkout -b feat/teamX-name
+   ```
+3. Edit your file (`src/teamX/teammember{rollnumber}.jsx`) — add first name only at line 4.  
+4. Add, commit, and push your branch.  
+5. Open a PR (Head: your branch → Base: `team/X`), assign it to yourself, and request review from your TL.  
+6. TL comments “Add the last name too.” — update your file, commit, and push again.  
+7. TL approves and merges your PR.  
+8. Student pull the team branch.
 
 ---
 
-## 🧑‍💻 Workflow / Simulation Scenario
+### ⚔️ Merge Conflict Simulation
 
-This repository is used for simulating collaborative development within a bootcamp context.  
-The standard workflow includes:
+1. TL commits directly to the team branch (`src/App.jsx`, line 68 onwards).  
+2. Students create a new branch from `team/X` (without pulling):  
+   ```bash
+   git checkout team/X
+   git checkout -b feat/teamX-newname
+   ```
+3. Make another change (e.g., team name), commit, and push, then open a PR.  
+4. GitHub shows a merge conflict.  
+5. Run the following to pull and resolve conflicts:  
+   ```bash
+   git pull origin team/X
+   ```
+6. Resolve the conflicts, commit, and push again.  
+7. PR updates with no conflicts — TL closes it (do not merge).  
 
-1. **Create a feature branch** (e.g., `team-a/john-addcomponent`)  
-2. **Make changes** to your team's module or files  
-3. **Commit and push** your branch to GitHub  
-4. **Open a Pull Request (PR)** for review  
-5. **Collaborate through code reviews** (approve or request changes)  
-6. **Merge the PR** into the `main` branch after approval  
-7. **View deployment** at your branch’s live URL  
+---
 
-This simulation helps participants practice real-world SDLC concepts — planning, version control, collaboration, and release workflows — in a controlled learning environment.
+### 🚀 TL & Release Managers Only
+
+1. Perform **team → dev → main** sync and verify changes in dev and prod environments.  
+2. Do a **backsync**: `dev → team/X`.  
 
 ---
 
