@@ -65,7 +65,7 @@ import TeamMember10E from './team-e/teamMember50';
 function App() {
   const teams = [
     { 
-      name: 'Team A', 
+      name: 'Team : Apple', 
       members: [
         <TeamMember1A key="teamMember1A" />,
         <TeamMember2A key="teamMember2A" />,
@@ -95,7 +95,7 @@ function App() {
       ]
     },
     { 
-      name: 'Team C', 
+      name: 'Team Cheetah', 
       members: [
         <TeamMember1C key="teamMember1C" />,
         <TeamMember2C key="teamMember2C" />,
@@ -125,7 +125,7 @@ function App() {
       ]
     },
     { 
-      name: 'Team E', 
+      name: 'SUMINA TEAM', 
       members: [
         <TeamMember1E key="teamMember1E" />,
         <TeamMember2E key="teamMember2E" />,
