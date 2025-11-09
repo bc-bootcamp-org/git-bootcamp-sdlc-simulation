@@ -65,7 +65,7 @@ import TeamMember10E from './team-e/teamMember50';
 function App() {
   const teams = [
     { 
-      name: 'Team A', 
+      name: 'Team A -test', 
       members: [
         <TeamMember1A key="teamMember1A" />,
         <TeamMember2A key="teamMember2A" />,
